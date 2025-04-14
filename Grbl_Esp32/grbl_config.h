@@ -1,4 +1,15 @@
 #pragma once
+// Disable WebUI and related services to avoid WebSockets and dependencies
+#undef ENABLE_HTTP
+#undef ENABLE_WIFI
+#undef ENABLE_BLUETOOTH
+#undef ENABLE_SD_CARD
+#undef ENABLE_OTA
+#undef ENABLE_TELNET
+#undef ENABLE_MDNS
+#undef ENABLE_SSDP
+#undef ENABLE_CAPTIVE_PORTAL
+#undef ENABLE_NOTIFICATIONS
 
 // Define your machine name (optional)
 #define MACHINE_NAME "XIAO CNC Minimal"
