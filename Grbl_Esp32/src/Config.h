@@ -105,6 +105,17 @@ const int MAX_N_AXIS = 6;
 // #if defined(ENABLE_WIFI) || defined(ENABLE_BLUETOOTH)
 // #    define WIFI_OR_BLUETOOTH
 // #endif
+// Disable WebUI and related services to avoid WebSockets and dependencies
+#undef ENABLE_HTTP
+#undef ENABLE_WIFI
+#undef ENABLE_BLUETOOTH
+#undef ENABLE_SD_CARD
+#undef ENABLE_OTA
+#undef ENABLE_TELNET
+#undef ENABLE_MDNS
+#undef ENABLE_SSDP
+#undef ENABLE_CAPTIVE_PORTAL
+#undef ENABLE_NOTIFICATIONS
 
 // #define ENABLE_HTTP                //enable HTTP and all related services
 // #define ENABLE_OTA                 //enable OTA
